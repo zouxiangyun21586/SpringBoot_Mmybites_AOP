@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yr.mapper2.UserMapper2">
+	<select id="sel" resultType="com.yr.entity.User">
+			select * from springBoot_user;
+	</select>
+	<insert id="ins" parameterType="com.yr.entity.User">
+		insert into springBoot_user(name,sex,age) values(#{name},#{sex},#{age});
+	</insert>
+	<insert id="ins2" parameterType="com.yr.entity.User">
+		insert into springBoot_user(name,sex,age) values(#{name},#{sex},#{age});
+	</insert>
+</mapper>
